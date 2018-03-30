@@ -46,7 +46,7 @@ Play with these values and you'll see how your agent will react to those changes
 
 Make your changes where you see the following:
 
-```
+```java
 hazardRewardsHashMap.put(HazardType.SMALL, -1.0);
 hazardRewardsHashMap.put(HazardType.MEDIUM, -2.0);
 hazardRewardsHashMap.put(HazardType.LARGE, -3.0);
@@ -55,7 +55,7 @@ Yes, you can set up different rewards for each problem. That's why I have two se
 
 Finally, don't forget the specific reward for reaching the goal state. Out of the box you get a positive `10`, but feel free to change it (of course, keep it positive unless you want your agent avoiding reaching the goal). You also need to worry about the default reward (a reward attached to any blank cell where the agen can move). You want to make this a negative value (out of the box you get `-0.1`) so the agent has some incentive to stop wandering around. You can change both of these values using the `Problem` constructor: 
 
-```
+```java
 return new Problem(map, numIterationsHashMap, -0.1, 10, hazardRewardsHashMap);
 ```
 
