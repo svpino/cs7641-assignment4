@@ -14,6 +14,7 @@ As soon as all error indicators are gone, you can run the Main.java class from i
 
 ## What can you do with this thing?
 
+### First, the map surface
 Start by changing the surface of the problems. Try and be creative and come up with something cool. This shouldn't be too hard. Find the `createProblem1()` and `createProblem2()` static methods and start playing with the `map` array inside them. Here are the rules to describe the surface:
 
  * `X` — The starting point of the agent.
@@ -36,8 +37,31 @@ X0011110
 0S001000
 000000SG
 ```
-
 ![An example map](https://github.com/svpino/cs7641-assignment4/blob/master/images/map.png)
 
+### Dealing with rewards
+All those hazards are just rewards (negative rewards, in this case) that you can setup however you like. Out of the box, you'll get that small hazards are worth `-1.0`, medium hazards are worth `-2.0`, and large hazards are worth `-3.0`.
 
+Play with these values and you'll see how your agent will react to those changes by trying to get as far away as possible from large penalties. You can change the optimal policy by just making small adjustments to these rewards.
+
+Make your changes where you see the following:
+
+```
+hazardRewardsHashMap.put(HazardType.SMALL, -1.0);
+hazardRewardsHashMap.put(HazardType.MEDIUM, -2.0);
+hazardRewardsHashMap.put(HazardType.LARGE, -3.0);
+```
+Yes, you can set up different rewards for each problem. That's why I have two separate methods to deal with all of these.
+
+Finally, don't forget the specific reward for reaching the goal state. Out of the box you get a positive `10`, but feel free to change it (of course, keep it positive unless you want your agent avoiding reaching the goal). You also need to worry about the default reward (a reward attached to any blank cell where the agen can move). You want to make this a negative value (out of the box you get `-0.1`) so the agent has some incentive to stop wandering around. You can change both of these values using the `Problem` constructor: 
+
+```
+return new Problem(map, numIterationsHashMap, -0.1, 10, hazardRewardsHashMap);
+```
+
+### The algorithms
+TBD
+
+## Analysis, Analysis, Analysis
+TBD
 
