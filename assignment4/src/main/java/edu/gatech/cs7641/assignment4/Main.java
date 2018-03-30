@@ -47,7 +47,7 @@ public class Main {
 	 * different problems, but you can add more problems and control which one runs by using this
 	 * constant.
 	 */
-	private static int PROBLEM = 2;
+	private static int PROBLEM = 1;
 
 	/*
 	 * This class runs one algorithm at the time. You can set this constant to the specific
