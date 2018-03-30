@@ -25,7 +25,7 @@ Start by changing the surface of the problems. Try and be creative and come up w
  * `M` — Represents a medium hazard. The agent will be penalized.
  * `L` — Represents a large hazard. The agent will be penalized.
 
-For example, here is the "code" representation of a map followed by a more "readable" version of it:
+For example, here is the "code" representation of a map:
 
 ```
 X0011110
@@ -37,7 +37,6 @@ X0011110
 0S001000
 000000SG
 ```
-![An example map](https://github.com/svpino/cs7641-assignment4/blob/master/images/map.png)
 
 ### Dealing with rewards
 All those hazards are just rewards (negative rewards, in this case) that you can set up however you like. Out of the box, you'll get that small hazards are worth `-1.0`, medium hazards are worth `-2.0`, and large hazards are worth `-3.0`.
