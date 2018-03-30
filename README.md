@@ -24,7 +24,7 @@ Start by changing the surface of the problems. Try and be creative and come up w
  * `M` — Represents a medium hazard. The agent will be penalized.
  * `L` — Represents a large hazard. The agent will be penalized.
 
-For example, the following surface:
+For example, here is the "code" representation of a map followed by a more "readable" version of it:
 
 ```
 X0011110
@@ -37,5 +37,7 @@ X0011110
 000000SG
 ```
 
-Represents the following map:
+![An example map](https://github.com/svpino/cs7641-assignment4/blob/master/images/map.png)
+
+
 
