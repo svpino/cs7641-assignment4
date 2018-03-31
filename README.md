@@ -77,7 +77,7 @@ numIterationsHashMap.put(Algorithm.QLearning, 1000);
 ```
 Make sure to explore the effect the number of iterations has on the convergence of each algorithm.
 
-## Analysis, Analysis, Analysis
+## Analysis, analysis, analysis
 In the end, this is what matters for this assignment. The code should help to give you some results and charts you can later use in your report. Here is what you'll get after running any of the three algorithms:
 ```
 Episode, Steps, Reward, Time
