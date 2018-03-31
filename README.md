@@ -59,7 +59,12 @@ return new Problem(map, numIterationsHashMap, -0.1, 10, hazardRewardsHashMap);
 ```
 
 ### The algorithms
-This code implements three different algorithms: Value Iteration, Policy Iteration, and Q-Learning. The source code should be straightforward to follow to find out what are the specific things you can change to see how these algorithms work, but here are some recommendations:
+This code implements three different algorithms: Value Iteration, Policy Iteration, and Q-Learning. Only one of these algorithms runs at a time. To select which algorithm to run, modify the following constant:
+
+```java
+private final static Algorithm algorithm = Algorithm.ValueIteration;
+```
+The source code should be straightforward to follow to find out what are the specific things you can change to see how these algorithms work, but here are some recommendations:
 
 * Look in the `main` method, when `runAlgorithm` is called to see the specific initialization of each one of these algorithms.
 * I'm setting the value of _gamma_ for all three algorithms to `0.99`. Feel free to investigate how this value changes your results and make sure you always keep it under `1`.
