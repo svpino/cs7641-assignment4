@@ -37,6 +37,12 @@ X0011110
 0S001000
 000000SG
 ```
+Set the `PROBLEM` constant to the specific problem you want to execute:
+
+```java
+private static int PROBLEM = 1;
+```
+I set up the code with two different problems. You should be able to extend that to more problems if you want with very few modifications.
 
 ### Dealing with rewards
 All those hazards are just rewards (negative rewards, in this case) that you can set up however you like. Out of the box, you'll get that small hazards are worth `-1.0`, medium hazards are worth `-2.0`, and large hazards are worth `-3.0`.
