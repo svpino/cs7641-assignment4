@@ -1,6 +1,6 @@
 # CS7641 - Machine Learning - Assignment 4 - Markov Decision Processes
 
-We are encouraged to grab, take, copy, borrow, steal (or whatever similar concept can come up with) the code to run our experiments and focus all of our time doing the analysis. Hopefully, this code will help others do that.
+We are encouraged to grab, take, copy, borrow, steal (or whatever similar concept you can come up with) the code to run our experiments and focus all of our time doing the analysis. Hopefully, this code will help others do that.
 
 For Assignment 4, we need to come up with two interesting MDPs, one with a small number of steps, and the other with a large number of steps. While "small" and "large" are largely subjective terms, this code uses an `8x8` grid map as the "small" example and a `21x21` grid map as the "large" one. You are encouraged to change these examples and make something different and exciting out of them. If you don't, then your report will probably look very similar to others, and you might get in trouble. Be creative.
 
