@@ -8,7 +8,7 @@ For Assignment 4, we need to come up with two interesting MDPs, one with a small
 
 The simplest way to get this thing up and running is by using [Eclipse](http://www.eclipse.org/). Of course, you can also use _your-sweetheart-tool_, but Eclipse will get you there faster because that's what I used and uploaded to this repository.
 
-Clone this repository, and import the project into Eclipse. Then you need to update the project using Maven (which should be conveniently added as an option when you right click your project inside Eclipse). Maven will download [Burlap](http://burlap.cs.brown.edu/) and a bunch of other things that come with it. Maven will save you 3 hours of library-chasing, so embrace it and make it work. 
+Clone this repository, and import the project into Eclipse. Then you need to update the project using Maven (which should be conveniently added as an option when you right click your project inside Eclipse). Maven will download [Burlap](http://burlap.cs.brown.edu/) and a bunch of other things that come with it. Maven will save you 3 hours of library-chasing, so embrace it and make it work. Make sure you are using Java 8 or later. 
 
 As soon as all error indicators are gone, you can run the Main.java class from inside Eclipse. That's pretty much it.
 
