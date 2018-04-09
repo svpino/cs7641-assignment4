@@ -343,8 +343,13 @@ public class Main {
 		numIterationsHashMap.put(Algorithm.ValueIteration, 100);
 		numIterationsHashMap.put(Algorithm.PolicyIteration, 20);
 		numIterationsHashMap.put(Algorithm.QLearning, 1000);
+		
+		HashMap<HazardType, Double> hazardRewardsHashMap = new HashMap<HazardType, Double>();
+		hazardRewardsHashMap.put(HazardType.SMALL, -1.0);
+		hazardRewardsHashMap.put(HazardType.MEDIUM, -2.0);
+		hazardRewardsHashMap.put(HazardType.LARGE, -3.0);
 
-		return new Problem(map, numIterationsHashMap, -0.1, 10, null);
+		return new Problem(map, numIterationsHashMap, -0.1, 10, hazardRewardsHashMap);
 	}
 
 }
