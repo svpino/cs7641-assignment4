@@ -260,6 +260,7 @@ public class Main {
 		List<State> states = StateReachability.getReachableStates(initialState, domain, hashingFactory);
 		ValueFunctionVisualizerGUI gui = GridWorldDomain.getGridWorldValueFunctionVisualization(states, map.getWidth(), map.getWidth(), valueFunction, policy);
 		gui.setTitle(title);
+		gui.setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 		gui.initGUI();
 	}
 
